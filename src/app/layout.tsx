@@ -16,12 +16,14 @@ const shizuruSerif = Shizuru({
   variable: "--font-shizuru-serif",
   weight: '400',
   display: 'swap',
+  subsets: ["latin"],
 })
 
 const kirang = Kirang_Haerang({
   variable: '--font-kirang',
   weight: '400',
   display: 'swap',
+  subsets: ["latin"],
 })
 
 export const metadata: Metadata = {
