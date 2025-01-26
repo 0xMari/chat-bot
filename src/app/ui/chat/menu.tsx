@@ -2,14 +2,23 @@
 import Link from "next/link";
 import NavLinks2 from "../navlinks2";
 import {HomeIcon, ChevronLeftIcon, ChevronRightIcon} from '@heroicons/react/24/outline'
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Menu(){
     const [isExpanded, setIsExpanded] = useState(false)
+    const path = usePathname()
 
     const toggleSideBar = () =>{
         setIsExpanded(!isExpanded)
     }
+
+    useEffect(()=>{
+        if(window.innerWidth<768){
+            setIsExpanded(false)
+        }
+        
+    }, [path])
 
     return(
         <div className={`flex flex-col md:flex-col px-3 py-4 md:px-2 bg-blue-100 ${isExpanded ? 'w-[100vw] md:w-64 h-screen z-1 md:z-0' : 'bg-white md:bg-blue-100 ml-4 md:ml-0 w-[10vw] md:w-16 h-[5vh] md:h-full z-1 md:z-0'}`}>
