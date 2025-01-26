@@ -56,7 +56,7 @@ export default function ChatbotPage() {
   }
 
   return (
-    <div className="mx-0 w-screen h-[90vh] md:h-screen max-w-md md:max-w-3xl py-2 relative overflow-y-none">
+    <div className="mx-0 w-screen h-[90vh] md:h-screen max-w-md 2xl:max-w-5xl md:max-w-3xl  py-2 relative overflow-y-none">
       <div className='h-full w-full flex flex-col'>
         {chatHistory.length>0 ? (
             <div className='flex-1 flex flex-col h-full w-full overflow-y-scroll p-6 mb-10' >

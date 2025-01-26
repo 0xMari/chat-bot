@@ -12,7 +12,7 @@ export default function RootLayout({
         <div className="w-full md:w-64">
             <Menu/>
         </div>
-        <div className="flex-grow p-0 md:pl-12 md:mx-auto">{children}</div>
+        <div className="flex-grow p-0 md:px-12 md:mx-auto">{children}</div>
     </div>
   );
 }

@@ -36,7 +36,7 @@ export default function Menu(){
                         <HomeIcon className="w-6 text-black"/>
                         {isExpanded? (
                             <p className="hidden md:block w-20 text-black md:w-20">
-                                logo
+                                
                             </p>
                         ):(<></>)}
                         
