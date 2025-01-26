@@ -5,7 +5,7 @@ import {HomeIcon, ChevronLeftIcon, ChevronRightIcon} from '@heroicons/react/24/o
 import { useState } from "react";
 
 export default function Menu(){
-    const [isExpanded, setIsExpanded] = useState(true)
+    const [isExpanded, setIsExpanded] = useState(false)
 
     const toggleSideBar = () =>{
         setIsExpanded(!isExpanded)
