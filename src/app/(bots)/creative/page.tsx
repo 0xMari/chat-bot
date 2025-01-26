@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useEffect, Suspense, useRef } from 'react'
-import { getResponse } from '@/app/api/chat/route'
+import { getResponse } from '@/app/api/chat/aiRes'
 import { ArrowUpIcon } from '@heroicons/react/24/outline'
 import {ChatMessage} from '@/app/(bots)/ChatMessage'
 
