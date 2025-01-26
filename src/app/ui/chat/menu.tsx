@@ -21,11 +21,11 @@ export default function Menu(){
     }, [path])
 
     return(
-        <div className={`flex flex-col md:flex-col px-3 py-4 md:px-2 bg-blue-100 ${isExpanded ? 'w-[100vw] md:w-64 h-screen z-1 md:z-0' : 'bg-white md:bg-blue-100 ml-4 md:ml-0 w-[10vw] md:w-16 h-[5vh] md:h-full z-1 md:z-0'}`}>
+        <div className={`flex flex-col md:flex-col px-3 py-4 md:px-2 bg-blue-100 ${isExpanded ? 'w-[100vw] md:w-64 h-screen z-1 md:z-0' : 'bg-white md:bg-blue-100 w-[10vw] md:w-16 h-[5vh] md:h-full z-1 md:z-0'}`}>
             <div className="flex flex-col">
-                <button className="self-end" onClick={toggleSideBar} aria-label={isExpanded? 'Collapse sidebar': 'Expand sidebar'}>
+                <button className="self-start md:self-end" onClick={toggleSideBar} aria-label={isExpanded? 'Collapse sidebar': 'Expand sidebar'}>
                     {isExpanded ? (
-                        <ChevronLeftIcon className="border border-gray-400 md:border-none rounded-xl md:rounded-none w-6 m-2 md:m-0 p-1 md:p-0"/>
+                        <ChevronLeftIcon className="border border-gray-400 md:border-none rounded-xl md:rounded-none w-6 ml-6 md:m-0 p-1 md:p-0"/>
                     ):(
                         <ChevronRightIcon className="border border-gray-400 md:border-none rounded-xl md:rounded-none w-6 ml-6 md:ml-0 p-1 md:p-0"/>
                     )}
