@@ -13,7 +13,7 @@ const openai = new OpenAI({
     dangerouslyAllowBrowser: true,
 })
 
-export const getResponse = async (userMessage: string, temp: number) =>{
+export async function getResponse (userMessage: string, temp: number){
     
     try{
         console.log(process.env.DEEPSEEK_API_KEY)
