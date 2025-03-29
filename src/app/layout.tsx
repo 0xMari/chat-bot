@@ -39,9 +39,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${shizuruSerif.variable} ${kirang.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${shizuruSerif.variable} ${kirang.variable} antialiased m-0 p-0 h-screen overflow-hidden`}
       >
-        <div className="bg-orange-100" id='grain'>{children}</div>
+        <div className="h-screen flex flex-col">
+          <div className="mx-auto w-[70vw] flex-grow overflow-auto ">
+            {children}
+          </div>
+          <div className="w-full h-[5vh] text-center text-gray-500 ">
+            powered by DeepSeek
+          </div>
+        </div>
+        
         
       </body>
     </html>
