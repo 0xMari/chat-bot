@@ -1,3 +1,36 @@
+Simple chatbot to experiment with api calls.
+
+The multi-chat works only in the same session: please do not reload the page if you want to keep the conversations going. 
+If not interest in exposing what you ask the AI about be my guest and refresh the page.
+I will not store any of your data since I am **truly** not interested in that (+ I don't want to bother with the whole privacy shenanigans for this little experiment).
+
+
+Feature wishlist for when I have the time:
+- multi-model
+- make disappear the fake white border on the text bubble in dark mode
+- cute animation while the model is processing the user input
+- fancy landing page (I don't have any idea currently)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

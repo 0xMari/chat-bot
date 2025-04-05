@@ -42,11 +42,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${shizuruSerif.variable} ${kirang.variable} antialiased m-0 p-0 h-screen overflow-hidden`}
       >
         <div className="h-screen flex flex-col">
-          <div className="mx-auto w-[70vw] flex-grow overflow-auto ">
+          <div className="mx-auto w-full flex-grow overflow-auto ">
             {children}
-          </div>
-          <div className="w-full h-[5vh] text-center text-gray-500 ">
-            powered by DeepSeek
           </div>
         </div>
         

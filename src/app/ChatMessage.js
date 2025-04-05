@@ -9,9 +9,10 @@ import React from 'react';
 const processedMath = (text) => {
     
     // Replace \(...\) with $...$
-    text = text.replace(/\\\((.*?)\\\)/g, '$$$1$$');
+    text = text.replace(/\\\(([\s\S]*?)\\\)/g, '$$$1$$');
     // Replace \[...\] with $$...$$
-    text = text.replace(/\\\[(.*?)\\\]/gs, '$$$$$1$$$$');
+    text = text.replace(/\\\[([\s\S]*?)\\\]/gs, '$$$$$1$$$$');
+    text = text.replace(/\\cdotp/g, '\\cdot');
     
     return text;
 }
