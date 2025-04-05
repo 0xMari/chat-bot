@@ -4,6 +4,7 @@
 
 The multi-chat works only in the same session: please **do not reload** the page if you want to keep the conversations going. 
 If you don't want to expose what you ask the AI about to the people around you, be my guest and refresh the page.
+
 I will not store any of your data since I am **truly** not interested in that (+ I don't want to bother with the whole privacy shenanigans for this little experiment).
 
 
